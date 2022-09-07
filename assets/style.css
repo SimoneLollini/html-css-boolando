@@ -34,7 +34,7 @@
     box-sizing: border-box;
 }
 
-.font{
+.font {
     font-family: 'Inter', sans-serif;
 }
 
@@ -42,25 +42,28 @@
     width: 75%;
     margin: auto;
 }
-.p_relative{
+
+.p_relative {
     position: relative;
 }
+
 .row {
     display: flex;
 }
 
 a {
     text-decoration: none;
-    
+
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-i{
+i {
     color: white;
 }
+
 /* #endregion common */
 
 /* #region utility */
@@ -78,6 +81,14 @@ i{
 
 .col-4 {
     width: calc(100%/12 *4);
+}
+
+.col-6 {
+    width: calc(100%/12 *6);
+}
+
+.col-7 {
+    width: calc(100%/12 *7);
 }
 
 .mg_left {
@@ -109,27 +120,30 @@ header {
     z-index: 1000;
 }
 
-.target a{
+.target a {
     color: var(--light);
     font-size: 0.5rem;
     padding-right: 1%;
 }
 
 
-.logo img{
+.logo img {
     width: 40%;
     position: absolute;
     left: 50%;
     align-self: center;
 }
-.carrello{
+
+.carrello {
     text-align: center;
     font-size: 0.5rem;
     justify-content: flex-end;
 }
-.carrello i{
+
+.carrello i {
     padding-left: 1%;
 }
+
 /* #endregion header */
 
 /* #region main */
@@ -137,33 +151,73 @@ main .row {
     flex-wrap: wrap;
     padding-bottom: 1rem;
 }
-.card-t,
-.card-b{
+
+.card-t {
     position: relative;
+
 }
-.badge{
+
+.card-t img {
+    padding: 2%;
+}
+
+.badge {
     color: var(--light);
     font-size: 0.5rem;
     position: absolute;
     bottom: 20%;
+    margin-left: 2%;
 }
-.badge-discount{
+
+.badge-discount {
     background-color: var(--disc);
 }
-.badge-peculiarity{
+
+.badge-peculiarity {
     background-color: var(--peculiarity);
 }
 
-.like{
+.like {
     background-color: var(--light);
     padding: 3%;
     position: absolute;
     top: 3%;
-    right:0;
+    right: 0;
 }
-.marca{
+
+.card-b {
+    margin-top: -5%;
+    margin-left: 2%
+}
+
+.marca {
     font-size: 0.4rem;
     color: var(--dark);
     font-weight: 200;
 }
+
+.card-b .row {
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.card-b h6 {
+    font-size: 0.55rem;
+}
+
+.price {
+    font-size: 0.5rem;
+}
+
+.price.discount {
+    color: var(--disc);
+}
+
+.price.full {
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+
+
 /* #endregion main*/
