@@ -64,6 +64,10 @@ i {
     color: white;
 }
 
+:hover{
+    cursor: pointer;
+}
+
 /* #endregion common */
 
 /* #region utility */
@@ -147,7 +151,12 @@ header {
 /* #endregion header */
 
 /* #region main */
-
+.card:hover img.visible{
+    display: none;
+}
+.card:hover .like{
+    color: #FF0000;
+}
 main .row {
     flex-wrap: wrap;
     padding-bottom: 1rem;
@@ -160,6 +169,12 @@ main .row {
 
 .card-t img {
     padding: 2%;
+}
+
+.card .visible{
+    padding: 2%;
+    position: absolute;
+    top: 0;
 }
 
 .badge {
@@ -185,6 +200,7 @@ main .row {
     top: 3%;
     right: 0;
 }
+
 
 .card-b {
     margin-top: -5%;
@@ -217,6 +233,12 @@ main .row {
 .price.full {
     font-weight: 100;
     text-decoration: line-through;
+}
+
+.price.full.red{
+    font-weight: 100;
+    text-decoration: none;
+    color: var(--disc);
 }
 
 
