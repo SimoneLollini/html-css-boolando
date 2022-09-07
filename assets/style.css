@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #region debug */
+.debug header {
+    background-color: lightcoral;
+    height: 30px;
+}
+
+.debug .logo,
+.debug .target,
+.debug .carrello {
+    background-color: red;
+    height: 30px;
+    border: 1px solid;
+}
+
+.debug main .col-4 {
+    background-color: brown;
+    border: 1px solid;
+    height: 300px;
+    padding: 1rem;
+}
+
+.debug footer {
+    background-color: darkblue;
+    height: 30px;
+}
+
+/* #endregion debug */
+
+/* #region common */
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.mg_left {
+    margin-left: -1rem;
+}
+
+.mg_right {
+    margin-right: -1rem;
+}
+
+.pt_3{
+    padding-top: 3rem;
+}
+
+/* #endregion common */
+
+/* #region utility */
+.d-flex {
+    display: flex;
+}
+
+.col-4 {
+    width: calc(100%/12 *4);
+}
+
+/* #endregion utility */
+
+/* #region header */
+header .row {
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+/* #endregion header */
+
+/* #region main */
+main .row {
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+
+/* #endregion main*/
