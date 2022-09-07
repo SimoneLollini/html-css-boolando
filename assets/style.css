@@ -27,34 +27,49 @@
 /* #endregion debug */
 
 /* #region common */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.font{
+    font-family: 'Inter', sans-serif;
+}
+
 .container {
     width: 75%;
     margin: auto;
 }
-
+.p_relative{
+    position: relative;
+}
 .row {
     display: flex;
 }
 
 a {
     text-decoration: none;
+    
 }
 
+img{
+    max-width: 100%;
+}
+
+i{
+    color: white;
+}
 /* #endregion common */
 
 /* #region utility */
 :root {
-    -: #008000;
-    : #1A1A1A;
-    : #FF0000;
-    : #FF6900;
-
+    --peculiarity: #008000;
+    --dark: #1A1A1A;
+    --disc: #FF0000;
+    --primary: #FF6900;
+    --light: white;
 }
 
 .d-flex {
@@ -82,14 +97,42 @@ a {
 /* #region header */
 header .row {
     align-items: center;
+
+}
+header .col-4{
+    
 }
 
 header {
     width: 100%;
     position: fixed;
-    background-color: var();
+    background-color: var(--primary);
+    padding: 1%;
+}
+.target{
+    lign-items: center;
+}
+.target a{
+    color: var(--light);
+    font-size: 0.5rem;
+    padding-right: 1%;
 }
 
+
+.logo img{
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    align-self: center;
+}
+.carrello{
+    text-align: center;
+    font-size: 0.5rem;
+    justify-content: flex-end;
+}
+.carrello i{
+    padding-left: 1%;
+}
 /* #endregion header */
 
 /* #region main */
@@ -97,6 +140,22 @@ main .row {
     flex-wrap: wrap;
     padding-bottom: 1rem;
 }
+.card-t{
+    position: relative;
+}
+.badge{
+    color: var(--light);
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 20%;
+}
+.badge-discount{
+    background-color: var(--disc);
+}
+.badge-peculiarity{
+    background-color: var(--peculiarity);
+}
+
 
 
 /* #endregion main*/

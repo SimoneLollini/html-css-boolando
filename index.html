@@ -6,57 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Boolando</title>
 </head>
 
 <body class="">
-    <header id="header">
+    <header class="font" id="header">
         <div class="container">
             <div class="row">
-                <div class="target col-4">
+                <div class="target col-4 d-flex">
                     <a href="#">Donna</a>
                     <a href="#">Uomo</a>
                     <a href="#">Bambini</a>
                 </div>
-                <div class="logo col-4"></div>
-                <div class="carrello col-4"></div>
+                <div class="logo col-4 d-flex p_relative">
+                    <img src="./assets/img/boolean-logo.png" alt="">
+                </div>
+                <div class="carrello col-4 d-flex">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
             </div>
 
         </div>
     </header>
     <!-- /#header -->
-    <main id="main">
+    <main class="font" id="main">
         <div class="container">
             <div class="row pt_3">
                 <div class="col-4 ">
-
+                    <div class="card">
+                        <div class="card-t">
+                            <img src="./assets/img/1.webp" alt="">
+                            <div class="heart"></div>
+                            <div class="badge">
+                                <span class="badge-discount">-50%</span>
+                                <span class="badge-peculiarity">Sostenibilità</span>
+                            </div>
+                        </div>
+                        <div class="card-b">
+                            <span class="marca">Levi's</span>
+                            <h4 class="articolo">RELAXED FIT TEE UNISEX</h4>
+                            <span class="price discount">14.99 €</span>
+                            <span class="price">29,90€</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4">
 
                 </div>
                 <div class="col-4 ">
+                </div>
+
+
             </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-4 ">
-
-                    </div>
-                    <div class="col-4">
-
-                    </div>
-                    <div class="col-4 ">
-
-                    </div>
-                </div>
-
-
-            
-
-        </div>
     </main>
     <!-- /#main -->
-    <footer id="footer">
+    <footer class="font" id="footer">
         <div class="container"></div>
     </footer>
     <!-- /#footer -->
