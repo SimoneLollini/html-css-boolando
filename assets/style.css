@@ -53,7 +53,7 @@
 
 a {
     text-decoration: none;
-
+    color: var(--light);
 }
 
 img {
@@ -147,6 +147,7 @@ header {
 /* #endregion header */
 
 /* #region main */
+
 main .row {
     flex-wrap: wrap;
     padding-bottom: 1rem;
@@ -221,3 +222,29 @@ main .row {
 
 
 /* #endregion main*/
+
+/* #region footer */
+footer{
+    background-color: var(--dark);
+    color:var(--light);
+    padding: 2% 0;
+}
+footer .nome, footer .social{
+    font-weight: 600;
+    font-size: 0.6rem;
+}
+
+footer a{
+    font-size: 30%;
+}
+
+.social i{
+    padding-right: 2%;
+    font-size: 0.85rem;
+    
+}
+.p_relative .social{
+    position: absolute;
+    right: 0;
+}
+/* #endregion footer */
